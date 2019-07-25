@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "@tdukart/gatsby-starter-hello-world-ts",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A simplified TypeScript-based bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "eslint --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
@@ -18,13 +18,24 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.5",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-typescript": "^0.14.0",
+    "gatsby-plugin-typescript": "^2.1.2",
+    "typescript": "^3.5.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/tdukart/gatsby-starter-hello-world-ts"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/tdukart/gatsby-starter-hello-world-ts/issues"
   }
 }
